@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Wellsprings",
+  "version": "0.2.0",
+  "identifier": "tech.mood.wellsprings",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Wellsprings",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 960,
+        "minHeight": 620,
+        "center": true,
+        "backgroundColor": "#07080b"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "publisher": "Wellsprings contributors",
+    "copyright": "MIT License",
+    "category": "Music",
+    "shortDescription": "A digital grimoire for making music",
+    "longDescription": "Wellsprings is an open-source music production app: patterns, piano roll, playlist, mixer, a 220-sound original bank, built-in synth and effects, and Murmur, a chaotic good AI assistant.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}

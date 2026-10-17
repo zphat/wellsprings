@@ -1,0 +1,16 @@
+{
+  "name": "wellsprings",
+  "private": true,
+  "version": "0.2.0",
+  "description": "A digital grimoire for making music",
+  "license": "MIT",
+  "scripts": {
+    "tauri": "tauri",
+    "web": "python -m http.server 9990 --bind 127.0.0.1 --directory web",
+    "build": "tauri build",
+    "dev": "tauri dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
